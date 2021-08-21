@@ -1,0 +1,15 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+      "no-path-concat": "off",
+      "no-unused-expressions": "off",
+      "linebreak-style": ["error", "windows"],
+      "no-underscore-dangle": "off",
+      "import/extensions": "off",
+      "no-console": "off",
+      "max-len": ["error", 120],
+      "newline-before-return": "error",
+      "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
+      "comma-dangle": ["error", "always-multiline"]
+    }
+  }

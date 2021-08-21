@@ -1,0 +1,29 @@
+{
+  "name": "meinfirst",
+  "version": "1.0.0",
+  "description": "This project will be a kind of program that plays music",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [
+    "music",
+    "app"
+  ],
+  "author": "Juan David GM",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12",
+    "sqlite3": "^5.0.2"
+  }
+}
