@@ -4,9 +4,9 @@ const { Schema } = mongoose;
 
 const UserSchema = Schema({
   name: String,
-  lastName: String,
+  last_name: String,
   password: String,
-  citizenNumber: Number,
+  citizen_number: Number,
   gender: { type: String, enum: ['male', 'female'] },
 });
 
