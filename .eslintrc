@@ -3,7 +3,7 @@
     "rules": {
       "no-path-concat": "off",
       "no-unused-expressions": "off",
-      "linebreak-style": ["error", "windows"],
+      "linebreak-style": "off",
       "no-underscore-dangle": "off",
       "import/extensions": "off",
       "no-console": "off",
