@@ -29,7 +29,7 @@ TaskRepository.update = async (id, {
     description,
     is_complete: isComplete,
     project_id: projectID,
-  });
+  }).where({ id });
 
   return sqlDB('tasks').select(['id', 'name', 'description', 'is_complete', 'project_id']).where({ name });
 };
