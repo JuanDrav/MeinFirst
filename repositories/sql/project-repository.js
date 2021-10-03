@@ -16,9 +16,11 @@ ProjectRepository.read = id => (
   sqlDB('projects').select(['id', 'name']).where({ id }).first()
 );
 
-ProjectRepository.update = (id, { name }) => (
-  sqlDB('projects').update({ name }).where({ id })
-);
+ProjectRepository.update = async (id, { name }) => {
+  await sqlDB('projects').update({ name }).where({ id });
+
+  return sqlDB('projects').select(['id', 'name']).where({ id });
+};
 
 ProjectRepository.delete = id => (
   sqlDB('projects').delete().where({ id })
